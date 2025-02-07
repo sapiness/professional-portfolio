@@ -1,0 +1,1142 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*import fonts*/
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-Regular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-Light.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-It.otf');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-Black.otf');
+  font-weight: 900;
+  
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-Semibold.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('SourceSansPro-Bold.otf');
+  font-weight: 700;
+}
+
+.sonsie-one-regular {
+  font-family: "Sonsie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior:smooth;
+ 
+}
+
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #C271FF;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C271FF;
+}
+/* navbar styling */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+  background: rgba(255, 255, 255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  z-index: 1;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #fff;
+  transition: color 0.2 ease;
+}
+nav.sticky .navbar .logo a{
+  color: #C271FF;
+  transition: color 0.2 ease;
+}
+
+nav.sticky .logo span{
+  color: #fff;
+
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #C271FF;
+}
+nav.sticky .menu a{
+  color: #C271FF;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+nav.sticky .media-icons a:hover{
+  color: #0E2431;
+}
+.navbar .media-icons a{
+  color: #fff;
+  font-size: 18px;
+  margin: 0 6px;
+  
+}
+
+.navbar .media-icons a:hover{
+  color: #C271FF;
+  font-size: 18px;
+  margin: 0 6px;
+} 
+nav.sticky .media-icons a{
+  color: #C271FF;
+  transition: color 0.2 ease;
+}
+
+.logo span{
+  color: #C271FF;
+  font-family: 'sonsie One';
+}
+
+.logo a{
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 32px; 
+  font-family: 'sonsie One';
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #C271FF;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #fff;
+}
+nav.sticky .menu-btn{
+  color: #C271FF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+
+.home{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+ background-repeat: no-repeat;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("back2.png");
+  margin: auto;
+}
+
+  
+.home .home-content{
+  width: 90%;
+  margin-top: 18%;
+  margin-left: 5%;
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+}
+
+.home-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home .text-one{
+  font-size: 25px;
+  color: #C271FF;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0.2s;
+}
+.home .text-two{
+  color: #C271FF;
+  font-size: 65px;
+  font-weight: 600;
+  margin-left: -3px;
+  padding-top: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #fff;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px #C271FF;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+
+.home .button{
+  margin: 14px 0;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #C271FF;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+ 
+  
+}
+
+.button.animate {
+  opacity: 1;
+  transform: translateY(0);
+  animation-delay: 2s;
+}
+
+.home .button button:hover{
+  border-color: #C271FF;
+  background-color: hsl(280, 100%, 97%);
+  color: #C271FF;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section{
+  padding-top: 40px;
+ 
+}
+.about{
+  background: #C271FF;
+  
+}
+
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 60px;
+ margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  color: #FFF;
+  
+}
+section .title span{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #C271FF;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about  .topic{
+  color: #fff;
+  /* font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px; */
+}
+
+section  .topic a{
+  color: #0E2431;
+  text-decoration: none;
+  
+}
+.about .title span::before,
+.about .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #0E2431;
+  left: 0;
+  bottom: 0;
+}
+
+.about .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-details .right p{
+  text-align: justify;
+  color: #fff;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #C271FF;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+    border-color: #C271FF;
+    background-color: hsl(280, 100%, 97%);
+    color: #C271FF;
+}
+
+.about .button button{
+  background: #fff;
+ color: #C271FF;
+}
+
+.about .button button:hover{
+ color: #fff;
+background: #C271FF;
+border-color: #fff;
+}
+ /* My Skills CSS */
+ .skills{
+   background: #071629;
+ }
+ .skills .content{
+   padding: 40px 0;
+ }
+ .skills .skills-details{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap:40px;
+ }
+
+ .skills-details .topic{
+color: #FFF;
+
+ }
+
+ .skills .title span{
+  color: #FFF;
+  
+   } 
+ .skills-details .text{
+   width: 50%;
+ }
+ .skills-details p{
+   color: #fff;
+   text-align: justify;
+ }
+.skills .skills-details .experience{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.skills-details .experience .num{
+  color: #fff;
+  font-size: 80px;
+}
+.skills-details .experience .exp{
+  color: #fff;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.skills-details .boxes{
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-details .box{
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skills-details .boxes .topic{
+  font-size: 20px;
+  color: #C271FF;
+}
+.skills-details .boxes .per{
+  font-size: 60px;
+  color: #C271FF;
+}
+
+/*My services CSS */
+.services{
+  height: 600px;
+  
+  
+}
+
+#servicetitle{
+  color: #071629;
+  margin-bottom: 25px;
+}
+
+.project-container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+/* card1 */
+.card1 {
+  background-image: url("uiux.jpg");
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin:  auto 15px;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  
+}
+.card1 h2 {
+  font-weight: bold;
+  margin-top: 0;
+  padding-bottom: 10px;
+  color: #071629;
+}
+.card1 p {
+  margin-bottom: 10px;
+  color: #071629;
+ width: auto;
+ 
+}
+.card1 .button {
+  background-color: #C271FF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card1 button:hover {
+  background-color: #c986fd;
+}
+
+/* card2 */
+
+.card2 {
+  background-image: url("dev.jpg");
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin:  auto 15px;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.card2 h2 {
+  font-weight: bold;
+  margin-top: 0;
+  padding-bottom: 10px;
+  color: #071629;
+}
+.card2 p {
+  margin-bottom: 10px;
+  color: #071629;
+}
+.card2 .button {
+  background-color: #C271FF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card2 button:hover {
+  background-color: #c986fd;
+}
+
+/* card 3 */
+.card3 {
+  background-image: url("graphics.jpg");
+  background-size: cover;
+  background-color: #F7F7F7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin:  auto 15px;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.card3 h2 {
+  font-weight: bold;
+  margin-top: 0;
+  padding-bottom: 10px;
+  color: #071629;
+}
+.card3 p {
+  margin-bottom: 10px;
+  color: #071629;
+}
+.card3 .button {
+  background-color: #C271FF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.card3 button:hover {
+  background-color: #c986fd;
+}
+
+/* overlay */
+.overlay-container {
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: 70%;
+  overflow-y: auto;
+  color: #071629;
+  
+}
+.close{
+  color: rgba(0, 0, 0, 0.253);
+  float: right; 
+   margin-top: -90px;
+}
+
+
+
+/* Contact Me CSS */
+.contact{
+  background: #071629;
+ 
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+  
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #FFF;
+ 
+}
+
+.contact .title span{
+  color: #FFF;
+}
+
+.contact .topic{
+  color: #FFF;
+}
+
+.contact .topic a{
+  color: #FFF;
+}
+        
+.contact .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #C271FF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.contact .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px 80px;
+}
+
+
+.contact .boxes .box{
+  
+  /* width: calc(100% / 3 - 20px); */
+  text-align: center;
+  border-radius: 12px;
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+
+button #email a{
+  color: #fff;
+
+}
+
+button  a:hover{
+  color: #C271FF;
+}
+
+/* Footer CSS */
+footer{
+  background: #C271FF;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #C271FF;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+    
+  }
+.project-container{
+padding: 0px;
+}
+
+
+  .card1 {
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+  }
+
+  .card1 p{
+    height: 300px;
+    width: auto;
+    
+  }
+
+  .card1 h2{
+    margin-bottom: 10px;
+  }
+
+  .card2 {
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+  }
+
+  .card2 h2 {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 0px;
+    color: #071629;
+  }
+  .card2 p {
+    margin-bottom: 0px;
+    color: #071629;
+  }
+
+  .card3 {
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+  }
+
+  .card3 h2{
+    margin-bottom: 10px;
+  }
+
+  .card3 p{
+    height: 300px;
+    width: 180px;
+    
+  }
+  .navbar .media-icons a {
+    font-size: 16px;
+    margin: 0 3px;
+  }
+.logo span{
+  font-size: 25px; 
+}
+
+.logo #text{
+  font-size: 25px; 
+}
+
+
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+.card1 p{
+  width: auto;
+  margin-bottom: 30px;
+  
+}
+
+.card1 h2{
+  
+  padding-bottom: 30px;
+}
+
+
+.card2 p{
+  width: auto;
+  margin-bottom: 30px;
+  
+}
+
+.card2 h2{
+  
+  padding-bottom: 30px;
+}
+
+.card3 p{
+  width: auto;
+  margin-bottom: 30px;
+  
+}
+
+.card3 h2{
+  
+  padding-bottom: 30px;
+}
+
+
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+
+   .logo a{
+    font-size: 28px;
+  }
+ 
+  
+  nav .navbar{
+    width: 70%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: hsl(280, 100%, 97%);
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+    
+  }
+  .logo span{
+    color: #C271FF;
+    font-family: 'sonsie One';
+    font-size: 25px;
+  }
+  
+  nav .navbar .logo a {
+    font-size: 25px;
+  }
+
+  .contact .boxes .box{
+  
+    width: auto;
+    text-align: center;
+    cursor: default;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .services .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 20px;
+    display: block;
+    color: #C271FF;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #C271FF;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px;
+  
+}
+
+.card1 {
+  
+  margin:  15px auto;
+  padding: 20px;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2 {
+  
+margin:  0px auto;
+padding: 20px;
+width: 600px;
+height: 250px;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.card3 {
+  
+margin:  15px auto;
+padding: 20px;
+width: 600px;
+height: 250px;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #C271FF;
+  }
+    
+ 
+  .services{
+    height: 1200px;
+    
+  }
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card1 {
+    
+    margin:  15px auto;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card1 p{
+
+ height: 150px;
+  width: 380px;
+  padding: auto;
+}
+
+.card2 {
+    
+  margin:  15px auto;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2 p{
+
+  height: 150px;
+   width: 380px;
+   padding: auto;
+ }
+
+.card3 {
+    
+  margin:  15px auto;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card3 p{
+
+  height: 150px;
+   width: 380px;
+   padding: auto;
+ }
+
+}

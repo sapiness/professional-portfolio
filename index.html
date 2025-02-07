@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+   
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navigation menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a id="text" href="index.html"><span>P</span>ortfolio</a>
+      </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://web.facebook.com/lisa.sapiness"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/surprise-moraba-8a3895203/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/sapiness"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    
+    <section class="home" id="home">
+     
+      <div class="home-content">
+       
+        <div class="text">
+         
+          <div class="text-one">Welcome,</div>
+          <div class="text-two">I'm Surprise Moraba</div>
+          <div class="text-three">Front-End Web Developer</div>
+         
+        </div>
+        
+        <div class="button">
+          <a href="#contact"><button>Hire Me</button></a>
+        </div>
+      </div>
+     
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="photo.png" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing and coding is my passion</div>
+            <p>
+              Enthusiastic and creative UI/UX designer with a passion for creating a positive and engaging user experience. With 1 plus years of hands-on experience in UI/UX design through an internship at Softmeet, I thrive on leveraging my skills in the job market to deliver custom creative assets and translating ideas into visually appealing designs.<br><br>Completed Front-end web development training at ALX and Web development internship at HexSoftwares. I enjoy learning new things and  my ambition is to be multi-skilled.</p><br>
+            <a href="cv.pdf" download class="button">
+              <button id="button">Download CV</button>
+            </a>
+          </div>
+            </div>
+          </div>
+        
+    </section>
+
+    <!-- My Skills Section Start -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills</div>
+            <p>Proficiency in HTML5, CSS3, JavaScript, Tailwind CSS and ReactJS frameworks. Mastered responsive design and version control with Git. Expertise in creating wireframes, prototypes and high-fidelity visual designs that enhance user experience. Proficiency in design tools such as Figma, Canva and Adobe Creative Suite(Photoshop, Illustrator). Working with APIs and advanced HTTP networking </p>
+            <div class="experience">
+              <div class="num">1+</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavaScript</div>
+              <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Figma</div>
+              <div class="per">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+      <div class="title"><span id="servicetitle">Services</span></div>
+      <div class="project-container">
+        <div class="card1">
+          <h2>UI/UX Design</h2>
+          <p>Visually appealing web and mobile app prototypes to enhance user experience.</p>
+          <button class="button" onclick="openOverlay('ui-ux-design')">View More</button>
+        </div>
+        <div class="card2">
+          <h2>Front-End Development</h2>
+          <p>Real-time weather dashboard, to-do list and quotes generator projects.</p>
+          <button class="button" onclick="openOverlay('front-end-development')">View More</button>
+        </div>
+        <div class="card3">
+          <h2>Graphic Design</h2>
+          <p>Video content, feature graphics and Iconography.</p>
+          <button class="button" onclick="openOverlay('graphic-design')">View More</button>
+        </div>
+      </div>
+      <!-- Overlay container -->
+      <div class="overlay-container" id="overlay-container">
+        <!-- Overlay content -->
+      </div>
+    </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          
+          <div class="boxes">
+          <div class="box">
+           
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="topic"><a href="mailto:sapiness695@gmail.com">sapiness695@gmail.com</a></div>
+  </div>
+        
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="topic">+27 64 808 1579</div>
+  </div>
+</div> 
+          
+          <div class="button">
+            <a href="mailto:sapiness695@gmail.com"><button id="email">Let's Chat</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#home">Surprise</a> | &#169; 2025 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
