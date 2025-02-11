@@ -201,41 +201,27 @@ nav.sticky .menu-btn{
   background-image: url("back2.png");
   margin: auto;
 }
-
-  
+ 
 .home .home-content{
   width: 90%;
   margin-top: 18%;
   margin-left: 5%;
-  /*display: flex;*/
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s, transform 1s;
+
 }
 
-.home-content.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .home .text-one{
   font-size: 25px;
   color: #C271FF;
-  animation: fadeIn 1.5s ease-in-out;
-  animation-fill-mode: backwards;
-  animation-delay: 0.2s;
 }
+
 .home .text-two{
   color: #C271FF;
   font-size: 65px;
   font-weight: 600;
   margin-left: -3px;
   padding-top: 10px;
-  animation: fadeIn 1.5s ease-in-out;
-  animation-fill-mode: backwards;
-  animation-delay: 0.5s;
+ 
 }
 .home .text-three{
   font-size: 40px;
@@ -243,17 +229,13 @@ nav.sticky .menu-btn{
   color: #fff;
   padding-bottom: 20px;
   text-shadow: 1px 1px #C271FF;
-  animation: fadeIn 1.5s ease-in-out;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
+ 
 }
 
 
 .home .button{
   margin: 14px 0;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s, transform 1s;
+  
 }
 .home .button button{
   outline: none;
@@ -265,16 +247,10 @@ nav.sticky .menu-btn{
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: all 0.4s ease;
- 
+  
   
 }
 
-.button.animate {
-  opacity: 1;
-  transform: translateY(0);
-  animation-delay: 2s;
-}
 
 .home .button button:hover{
   border-color: #C271FF;
@@ -282,16 +258,6 @@ nav.sticky .menu-btn{
   color: #C271FF;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
@@ -369,10 +335,7 @@ section  .topic{
 
 .about  .topic{
   color: #fff;
-  /* font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  margin-top: 20px; */
+ 
 }
 
 section  .topic a{
@@ -415,7 +378,7 @@ section .button button{
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: all 0.4s ease;
+  /* transition: all 0.4s ease; */
 }
 section .button button:hover{
     border-color: #C271FF;
@@ -656,17 +619,21 @@ color: #FFF;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   overflow-y: auto;
   color: #071629;
   
 }
+
 .close{
   color: rgba(0, 0, 0, 0.253);
   float: right; 
-   margin-top: -90px;
+   margin-top: -85px;
+   position: static;
 }
+
+
 
 
 
@@ -786,8 +753,9 @@ padding: 0px;
 
   .card1 {
     height: 300px;
-    width: 500px;
+    width: 520px;
     padding: 10px;
+    margin-right:10px;
   }
 
   .card1 p{
@@ -802,8 +770,9 @@ padding: 0px;
 
   .card2 {
     height: 300px;
-    width: 500px;
+    width: 520px;
     padding: 10px;
+    margin-right:10px;
   }
 
   .card2 h2 {
@@ -819,8 +788,9 @@ padding: 0px;
 
   .card3 {
     height: 300px;
-    width: 500px;
+    width: 520px;
     padding: 10px;
+   
   }
 
   .card3 h2{
@@ -844,8 +814,8 @@ padding: 0px;
   font-size: 25px; 
 }
 
-
 }
+
 @media (max-width: 1000px) {
   .about .about-details{
     justify-content: center;
@@ -1060,6 +1030,62 @@ text-align: center;
 
 }
 
+@media only screen and (max-width: 720px) {
+ 
+ 
+  .about .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .services{
+    height: 1100px;
+    
+  }
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  .card1 {
+  
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    }
+
+   
+
+    .card2 {
+  
+      width: 500px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+     
+      }
+
+      .card3 {
+  
+        width: 500px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+        }
+}
+
+
+
 @media (max-width: 500px){
   .home .text-two{
     font-size: 55px;
@@ -1138,5 +1164,7 @@ text-align: center;
    width: 380px;
    padding: auto;
  }
+
+
 
 }
