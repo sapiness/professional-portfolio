@@ -102,8 +102,8 @@ function openOverlay2(projectName) {
      <i class="fa fa-times" aria-hidden="true"></i>
 </div>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://weather-dashboard-capstone-project.netlify.app" allowfullscreen></iframe><br><br>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://dynamic-to-do-list-project.netlify.app" allowfullscreen></iframe><br><br>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://gymwebsite-project.netlify.app" allowfullscreen></iframe><br><br>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://dynamic-to-do-list-project.netlify.app" allowfullscreen></iframe><br><br>
 
 `;
   overlayContent.innerHTML = projectContent;
@@ -129,8 +129,8 @@ function openOverlay3(projectName) {
     <div class="close" onclick="closeOverlay()">
      <i class="fa fa-times" aria-hidden="true"></i>
 </div>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="Mobile App Post.png" allowfullscreen></iframe>
  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="new Mobile App Video.mp4" mute=1 allowfullscreen></iframe>
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="Mobile App Post.png" allowfullscreen></iframe>
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="sapi flyer.pdf"  allowfullscreen></iframe>
  
  `;
