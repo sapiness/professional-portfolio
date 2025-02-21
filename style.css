@@ -1052,20 +1052,19 @@ text-align: center;
   }
   .card1 {
   
-    width: 500px;
-    height: 250px;
+    width: 395px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     text-align: center;
    
     }
 
-   
 
     .card2 {
   
-      width: 500px;
-      height: 250px;
+      width: 395px;
+      height: 260px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -1074,13 +1073,29 @@ text-align: center;
 
       .card3 {
   
-        width: 500px;
-        height: 250px;
+        width: 395px;
+        height: 260px;
         display: flex;
         flex-direction: column;
         text-align: center;
        
         }
+
+        .card1 .button {
+          width: 280px;
+         margin: auto;
+        }
+
+        .card2 .button {
+          width: 280px;
+         margin: auto;
+        }
+
+        .card3 .button {
+          width: 280px;
+         margin: auto;
+        }
+      
 }
 
 
