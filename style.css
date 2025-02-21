@@ -1051,35 +1051,58 @@ text-align: center;
     
   }
   .card1 {
-  
-    width: 395px;
-    height: 260px;
+    
+    margin:  15px auto;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     text-align: center;
-   
-    }
+}
 
+.card1 p{
 
-    .card2 {
-  
-      width: 395px;
-      height: 260px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-     
-      }
+ height: 150px;
+  width: 380px;
+  padding: auto;
+}
 
-      .card3 {
-  
-        width: 395px;
-        height: 260px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-       
-        }
+.card2 {
+    
+  margin:  15px auto;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2 p{
+
+  height: 150px;
+   width: 380px;
+   padding: auto;
+ }
+
+.card3 {
+    
+  margin:  15px auto;
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card3 p{
+
+  height: 150px;
+   width: 380px;
+   padding: auto;
+ }
 
         .card1 .button {
           width: 280px;
