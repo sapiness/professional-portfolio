@@ -103,6 +103,7 @@ function openOverlay2(projectName) {
 </div>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://weather-dashboard-capstone-project.netlify.app" allowfullscreen></iframe><br><br>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://gymwebsite-project.netlify.app" allowfullscreen></iframe><br><br>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://animated-gym-website.netlify.app" allowfullscreen></iframe><br><br>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://dynamic-to-do-list-project.netlify.app" allowfullscreen></iframe><br><br>
 
 `;
