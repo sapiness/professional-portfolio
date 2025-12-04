@@ -131,7 +131,8 @@ function openOverlay3(projectName) {
      <i class="fa fa-times" aria-hidden="true"></i>
 </div>
  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="new Mobile App Video.mp4" mute=1 allowfullscreen></iframe>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="Mobile App Post.png" allowfullscreen></iframe>
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="school-competition.png" allowfullscreen></iframe>
+ <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="school-competition2.png" allowfullscreen></iframe>
   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="sapi flyer.pdf"  allowfullscreen></iframe>
  
  `;
