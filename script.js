@@ -1,6 +1,13 @@
 // Sticky Navigation Menu JS Code
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanes = document.querySelectorAll('.tab-pane');
+const slider = document.querySelector('.slider');
+
+let currentIndex = 0;
+let autoSlideInterval;
+
 
 let val;
 window.onscroll = function() {
@@ -59,95 +66,52 @@ window.addEventListener('load', () => {
 
 // open ovarlay to view service
 
-function openOverlay(projectName) {
-  const overlayContainer = document.getElementById('overlay-container');
-  const overlayContent = document.createElement('div');
-  const body = document.body;
-  overlayContent.classList.add('overlay-content');
-  
-  // Disable scrolling on the body element
-  body.style.overflowY = 'hidden';
+//Tabs
+tabBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        const activeTab = document.querySelector(`#${tab}`);
 
-  // Add project-specific content here
-  const projectContent = `
-    <h2>${projectName}</h2>
-    <p>This is the project content for ${projectName}.</p><br>
-    <div class="close" onclick="closeOverlay()">
-     <i class="fa fa-times" aria-hidden="true"></i>
-</div>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="650" src="https://embed.figma.com/design/kSyiHDP0jyuNfZXMvRyiuM/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe><br><br>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="650" src="https://embed.figma.com/design/ATZxn9RfASRXF2CML2Ao4g/Untitled?node-id=1-2&embed-host=share" allowfullscreen></iframe>
-   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1100" height="650" src="https://embed.figma.com/design/57H44J576wwBf3Oo2Ky6jp/dashboard?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-  `;
-  overlayContent.innerHTML = projectContent;
-  
-  overlayContainer.appendChild(overlayContent);
-  overlayContainer.style.display = 'flex';
+        // Remove active class from all tabs
+        tabBtns.forEach((btn) => btn.classList.remove('active'));
+        tabPanes.forEach((pane) => pane.classList.remove('active'));
+
+        // Add active class to clicked tab
+        btn.classList.add('active');
+        activeTab.classList.add('active');
+    });
+});
+
+function openOverlay(projectName, src) {
+    const overlayContainer = document.getElementById('overlay-container');
+    if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
+
+    const overlayContent = document.createElement('div');
+    const body = document.body;
+    overlayContent.classList.add('overlay-content');
+
+    // Disable scrolling on the body element
+    body.style.overflowY = 'hidden';
+
+    // Add project-specific content here
+    const projectContent = `
+        <div class="overlay-header">
+            <h2>${projectName}</h2>
+            <button class="close-btn" onclick="closeOverlay()">×</button>
+        </div>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="${src}" allowfullscreen></iframe>
+    `;
+    overlayContent.innerHTML = projectContent;
+    overlayContainer.appendChild(overlayContent);
+    overlayContainer.style.display = 'flex';
 }
 
-function openOverlay2(projectName) {
-  const overlayContainer = document.getElementById('overlay-container');
-  const overlayContent = document.createElement('div');
-  const body = document.body;
-  overlayContent.classList.add('overlay-content');
-  
-  // Disable scrolling on the body element
-  body.style.overflowY = 'hidden';
-
-  // Add project-specific content here
-  const projectContent = `
-    <h2>${projectName}</h2>
-    <p>This is the project content for ${projectName}.</p><br>
-    <div class="close" onclick="closeOverlay()">
-     <i class="fa fa-times" aria-hidden="true"></i>
-</div>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://weather-dashboard-capstone-project.netlify.app" allowfullscreen></iframe><br><br>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://gymwebsite-project.netlify.app" allowfullscreen></iframe><br><br>
-// <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://animated-gym-website.netlify.app" allowfullscreen></iframe><br><br>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="750" src="https://dynamic-to-do-list-project.netlify.app" allowfullscreen></iframe><br><br>
-
-`;
-  overlayContent.innerHTML = projectContent;
-  overlayContainer.appendChild(overlayContent);
-  overlayContainer.style.display = 'flex';
-}
-
-
-function openOverlay3(projectName) {
-  const overlayContainer = document.getElementById('overlay-container');
-  const overlayContent = document.createElement('div');
-  const body = document.body;
-  overlayContent.classList.add('overlay-content');
-  
-  // Disable scrolling on the body element
-  body.style.overflowY = 'hidden';
-
-  // Add project-specific content here
-  const projectContent = `
-    <h2>${projectName}</h2>
-    <p>This is the project content for ${projectName}.</p><br>
-   
-    <div class="close" onclick="closeOverlay()">
-     <i class="fa fa-times" aria-hidden="true"></i>
-</div>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="new Mobile App Video.mp4" mute=1 allowfullscreen></iframe>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="school-competition.png" allowfullscreen></iframe>
- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="school-competition2.png" allowfullscreen></iframe>
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="510px" height="510px" src="sapi flyer.pdf"  allowfullscreen></iframe>
- 
- `;
-  overlayContent.innerHTML = projectContent;
-  
-  overlayContainer.appendChild(overlayContent);
-  overlayContainer.style.display = 'flex';
-}
 
 function closeOverlay() {
-  const overlayContainer = document.getElementById('overlay-container');
-  overlayContainer.style.display = 'none';
-  const body = document.body;
-  // Enable scrolling on the body element
-  body.style.overflowY = 'auto';
-  overlayContainer.innerHTML = '';
+    const overlayContainer = document.getElementById('overlay-container');
+    overlayContainer.style.display = 'none';
+    const body = document.body;
+    // Enable scrolling on the body element
+    body.style.overflowY = 'auto';
+    overlayContainer.innerHTML = '';
 }
-
