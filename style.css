@@ -480,125 +480,7 @@ color: #FFF;
   
 }
 
-/* card1 */
-.card1 {
-  background-image: url("uiux.jpg");
-  background-size: cover;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin:  auto 15px;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
-  
-}
-.card1 h2 {
-  font-weight: bold;
-  margin-top: 0;
-  padding-bottom: 10px;
-  color: #071629;
-}
-.card1 p {
-  margin-bottom: 10px;
-  color: #071629;
- width: auto;
- 
-}
-.card1 .button {
-  background-color: #C271FF;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.card1 button:hover {
-  background-color: #c986fd;
-}
-
-/* card2 */
-
-.card2 {
-  background-image: url("dev.jpg");
-  background-size: cover;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin:  auto 15px;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-}
-.card2 h2 {
-  font-weight: bold;
-  margin-top: 0;
-  padding-bottom: 10px;
-  color: #071629;
-}
-.card2 p {
-  margin-bottom: 10px;
-  color: #071629;
-}
-.card2 .button {
-  background-color: #C271FF;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.card2 button:hover {
-  background-color: #c986fd;
-}
-
-/* card 3 */
-.card3 {
-  background-image: url("graphics.jpg");
-  background-size: cover;
-  background-color: #F7F7F7;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin:  auto 15px;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-}
-.card3 h2 {
-  font-weight: bold;
-  margin-top: 0;
-  padding-bottom: 10px;
-  color: #071629;
-}
-.card3 p {
-  margin-bottom: 10px;
-  color: #071629;
-}
-.card3 .button {
-  background-color: #C271FF;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-}
-.card3 button:hover {
-  background-color: #c986fd;
-}
 
 /* overlay */
 .overlay-container {
@@ -625,12 +507,12 @@ color: #FFF;
   
 }
 
-.close{
+/* .close{
   color: rgba(0, 0, 0, 0.253);
   float: right; 
    margin-top: -85px;
    position: static;
-}
+} */
 
 
 
