@@ -125,35 +125,124 @@
       </div>
     </section>
    
-    
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-      <div class="title"><span id="servicetitle">Services</span></div>
-      <div class="project-container">
-        <div class="card1">
-          <h2>UI/UX Design</h2>
-          <p>Visually appealing web and mobile app prototypes to enhance user experience.</p>
-          <button class="button" onclick="openOverlay('UI/UX-Design')">View More</button>
+     <!-- My Services Section Start -->
+<section class="services" id="services">
+<div class="content">
+         <div class="title"><span id="servicetitle">Services</span></div>
+   <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">UI/UX Design</button>
+            <button class="tab-btn" data-tab="tab2">Front-End Web Development</button>
+            <button class="tab-btn" data-tab="tab3">Graphic Design</button>
         </div>
-        <div class="card2">
-          <h2>Front-End Development</h2>
-          <p>Real-time weather dashboard,dynamic to-do list and gym website projects.</p>
-          <button class="button" onclick="openOverlay2('Front-End-Development')">View More</button>
+        <div class="tab-content">
+            <!--Tab1-->
+            <div id="tab1" class="tab-pane active">
+                <p>Visually appealing web and mobile app prototypes to enhance user experience.</p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <!--cards-->
+                        <div class="card" id="card1">
+          <h2>Company dashboard</h2>
+          <!-- <button class="button" onclick="openOverlay('Company dashboard')">View</button> -->
+          <button class="button" onclick="openOverlay('Company dashboard', 'https://embed.figma.com/design/57H44J576wwBf3Oo2Ky6jp/dashboard?node-id=0-1&embed-host=share')">View</button>
         </div>
-        <div class="card3">
-          <h2>Graphic Design</h2>
-          <p>Video content, feature graphics</p>
-          <button class="button" onclick="openOverlay3('Graphic-Design')">View More</button>
+         <div class="card" id="card2">
+          <h2>License disk scanner App</h2>
+          <!-- <button class="button" onclick="openOverlay2('License disk scanner')">View</button> -->
+           <button class="button" onclick="openOverlay('License disk scanner App', 'https://embed.figma.com/design/kSyiHDP0jyuNfZXMvRyiuM/Untitled?node-id=0-1&embed-host=share')">View</button>
+       
         </div>
-      </div>
+        <div class="card" id="card3">
+          <h2>Gym Website</h2>
+          <!-- <button class="button" onclick="openOverlay3('Gym Website')">View</button> -->
+            <button class="button" onclick="openOverlay('Gym Website', 'https://embed.figma.com/design/ATZxn9RfASRXF2CML2Ao4g/Untitled?node-id=1-2&embed-host=share')">View</button>
+       
+        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Tab2-->
+            <div id="tab2" class="tab-pane">
+                <p>Real-world applications tailored for your business needs,driving growth and success in the digital world.</p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <!--cards-->
+                        <div class="card" id="card1">
+                <h2>Weather dashboard</h2>
+                 <!-- <button class="button" onclick="openOverlay4('Weather dashboard')">View</button> -->
+                   <button class="button" onclick="openOverlay('Weather dashboard', 'https://weather-dashboard-capstone-project.netlify.app')">View</button>
+       
+            </div>
+          <div class="card" id="card2">
+                <h2>Dynamic To-do list</h2>
+                 <!-- <button class="button" onclick="openOverlay5('Dynamic to-do list')">View</button> -->
+                  <button class="button" onclick="openOverlay('Dynamic To-do list', 'https://dynamic-to-do-list-project.netlify.app')">View</button>
+       
+            </div>
+             <div class="card" id="card3">
+                <h2>Gym website</h2>
+                 <!-- <button class="button" onclick="openOverlay6('Gym website')">View</button> -->
+                   <button class="button" onclick="openOverlay('Gym dashboard', 'https://animated-gym-website.netlify.app')">View</button>
+       
+            </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Tab3-->
+            <div id="tab3" class="tab-pane">
+                 <p>Video content and visually appealing graphics.</p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <!--cards-->
+
+            <div class="card" id="card1">
+                <h2>Videos</h2>
+        <button class="button" onclick="openOverlay('Videos', ['vid5.mp4', 'Subscription Video.mp4', 'vid3.mp4', 'vid2.mp4', 'vid1.mp4'],true)">View</button>
+
+            </div>
+          <div class="card" id="card2">
+                <h2>Posters</h2>
+                 
+       <button class="button" onclick="openOverlay('Posters', ['school-competition.png', 'school-competition2.png','Celebration poster.pdf', 'competition-poster.png'])">View</button>
+
+            </div>
+             <div class="card" id="card3">
+                <h2>Brochures</h2>
+                
+       <button class="button" onclick="openOverlay('Brochures', ['sapi flyer.pdf'])">View</button>
+
+            </div>
+            <div class="card" id="card4">
+                <h2>Banners</h2>
+                
+       <button class="button" onclick="openOverlay('Banners', ['banner.png', 'banner2.png', 'water sticker_updated.png'])">View</button>
+
+            </div>
+
+            <div class="card" id="card5">
+                <h2>Carousel</h2>
+                 
+                   <button class="button" onclick="openOverlay('Carousel', ['Softmeet booklet.pdf', '_Carousel.pdf'])">View</button>
+       
+            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
       <!-- Overlay container -->
       <div class="overlay-container" id="overlay-container">
-        <!-- Overlay content -->
-        
-      </div>
-    </div>
-    </section>
+        <!-- Overlay content --></div>
+</div>
+</section>
 
     <!-- Contact Me section Start -->
     <section class="contact" id="contact">
