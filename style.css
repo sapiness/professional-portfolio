@@ -206,6 +206,7 @@ nav.sticky .menu-btn{
   width: 90%;
   margin-top: 18%;
   margin-left: 5%;
+	
 
 }
 
@@ -394,6 +395,7 @@ section .button button:hover{
 .about .button button{
   background: #fff;
  color: #C271FF;
+	margin-left: 15%;
 }
 
 .about .button button:hover{
@@ -1004,7 +1006,7 @@ padding: 0px;
   }
   .skills-details .text{
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .skills-details .boxes{
     justify-content: center;
@@ -1046,7 +1048,13 @@ padding: 0px;
 
 @media only screen and (max-width: 720px) {
  
- 
+
+	.home .home-content{
+  width: 90%;
+margin: 120px auto;
+		text-align: center;	
+
+}
   .about .left img{
     height: 350px;
     width: 350px;
@@ -1100,7 +1108,12 @@ padding: 0px;
     color: #C271FF;
   }
     
- 
+ 	.home .home-content{
+  width: 90%;
+margin: 120px auto;
+		text-align: center;	
+
+}
   .services{
     height: 1200px;
     
@@ -1210,7 +1223,10 @@ padding: 0px;
 /* Responsive Media Query */
  /* @media (min-width: 1190px) {
   
-
+  .services{
+    height: auto;
+    
+  }
   .card {
     margin:10px;
     
@@ -1251,7 +1267,10 @@ padding: 0px;
   margin-bottom: 20px;
   
 }
-
+  .services{
+    height: auto;
+    
+  }
 .card {
    width: auto;
     height: 180px;
@@ -1293,7 +1312,7 @@ padding: 0px;
  @media only screen and (max-width: 720px) {
  
   .services{
-    height: 1100px;
+    height: auto;
     
   }
   .project-container {
@@ -1336,7 +1355,9 @@ padding: 0px;
 
 @media (max-width: 500px){
 
- 
+ .logo{
+margin: -5px;
+ }
   .services{
     height:auto;
     
