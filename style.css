@@ -872,7 +872,7 @@ padding: 0px;
 
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
   .about .about-details{
     justify-content: center;
     flex-direction: column;
@@ -894,11 +894,10 @@ padding: 0px;
 .card {
   width: auto;
   margin-bottom: 30px;
-  
+  height:auto;
 }
 
 .card h2{
-  
   padding-bottom: 30px;
 }
 
