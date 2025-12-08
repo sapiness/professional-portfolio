@@ -326,7 +326,7 @@ section .title span::after{
   border-radius: 12px;
 }
 .about-details .right{
-  width: 55%;
+    width: 100%;
 }
 section  .topic{
   color: #0E2431;
