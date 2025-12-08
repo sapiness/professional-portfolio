@@ -928,6 +928,7 @@ padding: 0px;
   text-align: center;
 
 }
+	
 
 .project-container {
   display: flex;
@@ -1103,11 +1104,11 @@ margin: 120px auto;
 	.about-details .right{
     width: 100%;
 }
-	/* .about .about-details .left {
+	.about .about-details .left {
     width: 100%;
 		display: flex;
         justify-content: center;
-} */
+}
   .services{
     height: auto;
 
@@ -1243,9 +1244,13 @@ margin: 120px auto;
 	.about-details .right{
     width: 100%;
 }
-	/* .about .about-details .left {
+	
+		.about .about-details .left {
     width: 100%;
-} */
+		display: flex;
+        justify-content: center;
+
+}
  	.home .home-content{
   width: 90%;
 margin: 120px auto;
