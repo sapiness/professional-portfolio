@@ -860,7 +860,6 @@ padding: 0px;
     margin-right:10px;
   }
 
- 
 
   .card h2{
     margin-bottom: 10px;
@@ -919,6 +918,50 @@ padding: 0px;
     height: 350px;
     width: 350px;
   }
+	.about .topic {
+   text-align: center;
+}
+
+  .services{
+    height: auto;
+    
+  }
+.card {
+   width: auto;
+    height: 180px;
+    margin: 10px auto;
+    /* display: flex; */
+     justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    scroll-snap-align: start;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px;
+  
+}
+.slider-container {
+   
+  width: auto;
+    height: auto;
+  
+}
+
+ .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+       margin: auto;  
+}
+	
 }
 
 @media (max-width: 750px) {
@@ -1077,67 +1120,40 @@ margin: 120px auto;
     
     margin:  15px auto;
     padding: 20px;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+        height: 150px;
+        width: auto;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    scroll-snap-align: start;
+  flex-direction: column;
+  text-align: center;
 
-
+} 
 
         .card .button {
           width: auto;
          margin: auto;
         }
+.services{
+    height: auto;  
+  }
 
-      
+
+.slider {
+     display: flow; 
+     width: 100%;
 }
 
-
-
-@media (max-width: 500px){
-  .home .text-two{
-    font-size: 55px;
-  }
-  .home .text-three{
-    font-size: 33px;
-  }
-  .skills-details .boxes .per{
-    font-size: 50px;
-    color: #C271FF;
-  }
-    
- 	.home .home-content{
-  width: 90%;
-margin: 120px auto;
-		text-align: center;	
-
-}
-  .services{
-    height: 1200px;
-    
-  }
-  .project-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-  }
-  
-  .card {
-    
-    margin:  15px auto;
-    padding: 20px;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
+.slider-container {
+   
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+ }     
 }
 
 
@@ -1262,10 +1278,12 @@ margin: 120px auto;
 
 /* @media (max-width: 900px) {
  
-  .card p{
-  width: auto;
-  margin-bottom: 20px;
-  
+ 
+
+.card {
+        height: 170px;
+        width: auto;
+    }
 }
   .services{
     height: auto;
@@ -1309,11 +1327,16 @@ margin: 120px auto;
 
 }  */
 
- @media only screen and (max-width: 720px) {
+ /* @media only screen and (max-width: 720px) {
  
   .services{
     height: auto;
-    
+
+	  .card {
+        height: 150px;
+        width: auto;
+    }
+	  
   }
   .project-container {
     display: flex;
@@ -1351,13 +1374,41 @@ margin: 120px auto;
   text-align: center;
 
 } 
- }
+ } */
 
 @media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #C271FF;
+  }
+    
+ 	.home .home-content{
+  width: 90%;
+margin: 120px auto;
+		text-align: center;	
 
-.logo #text {
-margin: -5px;
- }
+}
+  /* .services{
+    height: 1200px;
+    
+  } */
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
+	    nav .navbar {
+      margin:70px;
+    }
   .services{
     height:auto;
     
@@ -1366,8 +1417,13 @@ margin: -5px;
    .card {
     height: 150px;
   width: auto;
-  }
-  
+    margin:  15px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .slider-container {
    
     margin: 10px auto;
