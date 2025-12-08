@@ -962,7 +962,11 @@ padding: 0px;
   .services{
     height: auto;  
   }
-	
+	.about .about-details .left {
+    width: 100%;
+		display: flex;
+        justify-content: center;
+}
   nav .navbar{
     width: 70%;
   }
@@ -1099,12 +1103,15 @@ margin: 120px auto;
 	.about-details .right{
     width: 100%;
 }
-	.about .about-details .left {
+	/* .about .about-details .left {
     width: 100%;
-}
+		display: flex;
+        justify-content: center;
+} */
   .services{
     height: auto;
-    
+
+	  
   }
   .project-container {
     display: flex;
@@ -1236,9 +1243,9 @@ margin: 120px auto;
 	.about-details .right{
     width: 100%;
 }
-	.about .about-details .left {
+	/* .about .about-details .left {
     width: 100%;
-}
+} */
  	.home .home-content{
   width: 90%;
 margin: 120px auto;
