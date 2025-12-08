@@ -1355,7 +1355,7 @@ margin: 120px auto;
 
 @media (max-width: 500px){
 
- .logo{
+.logo #text {
 margin: -5px;
  }
   .services{
