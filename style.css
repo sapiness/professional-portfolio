@@ -50,7 +50,7 @@ html{
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-decoration: none;
   scroll-behavior:smooth;
  
@@ -463,7 +463,7 @@ color: #FFF;
 
 /*My services CSS */
 .services{
-  height: 600px;
+  height: 700px;
   
   
 }
@@ -479,7 +479,218 @@ color: #FFF;
   justify-content: center;
   
 }
+section{
+padding-top: 40px;
+background-image: url('new159.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 
+ 
+}
+section .content{
+  width: 80%;
+  margin: 0px auto;
+  padding-bottom: 60px;
+ margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+section .title{
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  
+}
+section .title span{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #C271FF;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*tabs*/
+.tab-container {
+   
+    margin: 30px auto;
+}
+.tab-container p{
+  text-align: center;
+}
+
+.tabs {
+    display: flex;
+    /*border-bottom: 1px solid #ddd;*/
+    justify-content: center;
+     padding: 20px;
+}
+
+.tab-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+  background-color: #e2e2e2;
+   transition-duration: 0.2s;
+  
+}
+
+.tab-btn.active {
+    background-color: #C271FF;
+    color: #fff;
+}
+
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display:block;
+}
+
+.slider-container {
+    width: 87%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 260px;
+    justify-content: center;
+    background-color:  #f2f1f1bc;;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+     /* justify-content: center;   */
+}
+
+.card {
+    min-width: 310px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    background-image: url("uiux.jpg");
+  background-size: cover;
+  border: 1px solid #ddd;
+  flex-direction: column;
+  text-align: center;
+
+}
+.card:hover{
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+ 
+}
+
+/* Tab1  */
+#tab1 #card1 {
+  background-image: url('dashboard.jpg');
+  background-size: cover;
+ background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode:color;
+  
+}
+
+#tab1 #card2 {
+  background-image: url('APP.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab1 #card3 {
+  background-image: url('GYM\ WEBSITE.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode:color;
+}
+
+/* Tab2  */
+#tab2 #card1 {
+  background-image: url('WEATHER.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode:color;
+}
+
+#tab2 #card2 {
+  background-image: url('TO-DO-LIST.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab2 #card3 {
+  background-image: url('GYM.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+/* Tab3  */
+#tab3 #card1 {
+  background-image: url('VIDEOS.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab3 #card2 {
+  background-image: url('POSTERS.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab3 #card3 {
+  background-image: url('brochure.png');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab3 #card4 {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
+
+#tab3 #card5 {
+  background-image: url('booklet..jpg');
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0.303);
+  background-blend-mode: color;
+}
 
 
 /* overlay */
@@ -632,57 +843,20 @@ padding: 0px;
 }
 
 
-  .card1 {
+  .card {
     height: 300px;
     width: 520px;
     padding: 10px;
     margin-right:10px;
   }
 
-  .card1 p{
-    height: 300px;
-    width: auto;
-    
-  }
+ 
 
-  .card1 h2{
+  .card h2{
     margin-bottom: 10px;
   }
 
-  .card2 {
-    height: 300px;
-    width: 520px;
-    padding: 10px;
-    margin-right:10px;
-  }
-
-  .card2 h2 {
-    font-weight: bold;
-    margin-top: 0;
-    padding-bottom: 0px;
-    color: #071629;
-  }
-  .card2 p {
-    margin-bottom: 0px;
-    color: #071629;
-  }
-
-  .card3 {
-    height: 300px;
-    width: 520px;
-    padding: 10px;
-   
-  }
-
-  .card3 h2{
-    margin-bottom: 10px;
-  }
-
-  .card3 p{
-    height: 300px;
-    width: 180px;
-    
-  }
+  
   .navbar .media-icons a {
     font-size: 16px;
     margin: 0 3px;
@@ -717,39 +891,17 @@ padding: 0px;
   }
 }
 
-.card1 p{
+.card p{
   width: auto;
   margin-bottom: 30px;
   
 }
 
-.card1 h2{
+.card h2{
   
   padding-bottom: 30px;
 }
 
-
-.card2 p{
-  width: auto;
-  margin-bottom: 30px;
-  
-}
-
-.card2 h2{
-  
-  padding-bottom: 30px;
-}
-
-.card3 p{
-  width: auto;
-  margin-bottom: 30px;
-  
-}
-
-.card3 h2{
-  
-  padding-bottom: 30px;
-}
 
 
 @media (max-width: 900px) {
@@ -803,14 +955,7 @@ padding: 0px;
     flex-direction: column;
 
   }
-  .services .boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
+ 
   .project-container {
     display: flex;
     justify-content: center;
@@ -876,7 +1021,7 @@ padding: 0px;
   
 }
 
-.card1 {
+.card {
   
   margin:  15px auto;
   padding: 20px;
@@ -887,27 +1032,7 @@ padding: 0px;
   text-align: center;
 }
 
-.card2 {
-  
-margin:  0px auto;
-padding: 20px;
-width: 600px;
-height: 250px;
-display: flex;
-flex-direction: column;
-text-align: center;
-}
 
-.card3 {
-  
-margin:  15px auto;
-padding: 20px;
-width: 600px;
-height: 250px;
-display: flex;
-flex-direction: column;
-text-align: center;
-}
 
 }
 
@@ -932,7 +1057,7 @@ text-align: center;
     flex-wrap: wrap;
     
   }
-  .card1 {
+  .card {
     
     margin:  15px auto;
     padding: 20px;
@@ -943,63 +1068,13 @@ text-align: center;
     text-align: center;
 }
 
-.card1 p{
 
- height: 150px;
-  width: 380px;
-  padding: auto;
-}
 
-.card2 {
-    
-  margin:  15px auto;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card2 p{
-
-  height: 150px;
-   width: 380px;
-   padding: auto;
- }
-
-.card3 {
-    
-  margin:  15px auto;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card3 p{
-
-  height: 150px;
-   width: 380px;
-   padding: auto;
- }
-
-        .card1 .button {
+        .card .button {
           width: 280px;
          margin: auto;
         }
 
-        .card2 .button {
-          width: 280px;
-         margin: auto;
-        }
-
-        .card3 .button {
-          width: 280px;
-         margin: auto;
-        }
       
 }
 
@@ -1030,7 +1105,7 @@ text-align: center;
     
   }
   
-  .card1 {
+  .card {
     
     margin:  15px auto;
     padding: 20px;
@@ -1041,262 +1116,7 @@ text-align: center;
     text-align: center;
 }
 
-.card1 p{
 
- height: 150px;
-  width: 380px;
-  padding: auto;
-}
-
-.card2 {
-    
-  margin:  15px auto;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card2 p{
-
-  height: 150px;
-   width: 380px;
-   padding: auto;
- }
-
-.card3 {
-    
-  margin:  15px auto;
-  padding: 20px;
-  width: 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card3 p{
-
-  height: 150px;
-   width: 380px;
-   padding: auto;
- }
-
-}
-
-section{
-padding-top: 40px;
-background-image: url('new159.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-
- 
-}
-section .content{
-  width: 80%;
-  margin: 0px auto;
-  padding-bottom: 60px;
- margin-bottom: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-section .title{
-  display: flex;
-  justify-content: center;
-  color: #FFF;
-  
-}
-section .title span{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 8px;
-}
-section .title span::before,
-section .title span::after{
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #C271FF;
-  left: 0;
-  bottom: 0;
-}
-section .title span::after{
-  bottom: -7px;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-/*tabs*/
-.tab-container {
-   
-    margin: 30px auto;
-}
-.tab-container p{
-  text-align: center;
-}
-
-.tabs {
-    display: flex;
-    /*border-bottom: 1px solid #ddd;*/
-    justify-content: center;
-     padding: 20px;
-}
-
-.tab-btn {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.tab-btn:hover {
-  background-color: #e2e2e2;
-   transition-duration: 0.2s;
-  
-}
-
-.tab-btn.active {
-    background-color: #C271FF;
-    color: #fff;
-}
-
-
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
-    display:block;
-}
-
-.slider-container {
-    width: 88%;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 260px;
-    justify-content: center;
-    background-color:  #f2f1f1bc;;
-}
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-     justify-content: center;  
-}
-
-.card {
-    min-width: 310px;
-    height: 200px;
-    margin: 20px;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    scroll-snap-align: start;
-    background-image: url("uiux.jpg");
-  background-size: cover;
-  border: 1px solid #ddd;
-  flex-direction: column;
-  text-align: center;
-
-}
-.card:hover{
-  transform: scale(1.1);
-  transition-duration: 0.4s;
- 
-}
-
-/* Tab1  */
-#tab1 #card1 {
-  background-image: url('dashboard.jpg');
-  background-size: cover;
- background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode:color;
-  
-}
-
-#tab1 #card2 {
-  background-image: url('APP.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab1 #card3 {
-  background-image: url('GYM\ WEBSITE.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode:color;
-}
-
-/* Tab2  */
-#tab2 #card1 {
-  background-image: url('WEATHER.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode:color;
-}
-
-#tab2 #card2 {
-  background-image: url('TO-DO-LIST.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab2 #card3 {
-  background-image: url('GYM.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-/* Tab3  */
-#tab3 #card1 {
-  background-image: url('VIDEOS.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab3 #card2 {
-  background-image: url('POSTERS.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab3 #card3 {
-  background-image: url('brochure.png');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab3 #card4 {
-  background-image: url('banner.jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
-}
-
-#tab3 #card5 {
-  background-image: url('booklet..jpg');
-  background-size: cover;
-  background-color: rgba(240, 240, 240, 0.303);
-  background-blend-mode: color;
 }
 
 
