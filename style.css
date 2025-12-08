@@ -326,7 +326,7 @@ section .title span::after{
   border-radius: 12px;
 }
 .about-details .right{
-    width: 100%;
+    width: 55%;
 }
 section  .topic{
   color: #0E2431;
@@ -1096,6 +1096,9 @@ margin: 120px auto;
     align-items: center;
 	flex-direction: column;
 }
+	.about-details .right{
+    width: 100%;
+}
   .services{
     height: auto;
     
@@ -1226,7 +1229,10 @@ margin: 120px auto;
     font-size: 50px;
     color: #C271FF;
   }
-    
+
+	.about-details .right{
+    width: 100%;
+}
  	.home .home-content{
   width: 90%;
 margin: 120px auto;
