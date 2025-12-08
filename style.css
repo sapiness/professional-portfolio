@@ -729,17 +729,6 @@ section .title span::after{
   
 }
 
-/* .close{
-  color: rgba(0, 0, 0, 0.253);
-  float: right; 
-   margin-top: -85px;
-   position: static;
-} */
-
-
-
-
-
 /* Contact Me CSS */
 .contact{
   background: #071629;
@@ -1086,13 +1075,10 @@ padding: 0px;
   text-align: center;
 }
 
-
-
 }
 
 @media only screen and (max-width: 720px) {
  
-
 	.home .home-content{
   width: 90%;
 margin: 120px auto;
@@ -1156,17 +1142,10 @@ margin: 120px auto;
 
 /*services*/
 
-/*My services CSS */
-.services{
-  height: 690px;
-  
-}
-
 #servicetitle{
   color: #071629;
   margin-bottom: 25px;
 }
-
 
 .card h2 {
   font-weight: bold;
@@ -1177,7 +1156,6 @@ margin: 120px auto;
 	text-shadow: 0px 2px 4px #C271FF;
 }
   
-
 .card .button {
   background-color: #C271FF;
   color: #fff;
@@ -1232,146 +1210,6 @@ margin: 120px auto;
     cursor: pointer;
 }
 
-/* 
-/* Responsive Media Query */
- /* @media (min-width: 1190px) {
-  
-  .services{
-    height: auto;
-    
-  }
-  .card {
-    margin:10px;
-    
-  }
-
-  .card h2{
-    margin-bottom: 10px;
-     font-weight: bold;
-    margin-top: 0;
-    padding-bottom: 0px;
-    color: #071629;
-  }
-
-  .slider-container {
-   
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: auto;
-    width: auto;
-  }
-
-   .slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-       margin: auto;  
-} 
- } */
-
-
-/* @media (max-width: 900px) {
- 
- 
-
-.card {
-        height: 170px;
-        width: auto;
-    }
-}
-  .services{
-    height: auto;
-    
-  }
-.card {
-   width: auto;
-    height: 180px;
-    margin: 10px auto;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    scroll-snap-align: start;
-  flex-direction: column;
-  text-align: center;
-
-}
-
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  padding: 0px;
-  
-}
-.slider-container {
-   
-  width: auto;
-    height: auto;
-  
-}
-
- .slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-       margin: auto;  
-}
-
-}  */
-
- /* @media only screen and (max-width: 720px) {
- 
-  .services{
-    height: auto;
-
-	  .card {
-        height: 150px;
-        width: auto;
-    }
-	  
-  }
-  .project-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-  }
-
-.slider {
-     display: flow; 
-     width: 100%;
-}
-
-.slider-container {
-   
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: auto;
- } 
-
- .card {
-    width: auto;
-    /* 
-    height: 150px;
-    margin: 10px auto; */
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    scroll-snap-align: start;
-  flex-direction: column;
-  text-align: center;
-
-} 
- } */
 
 @media (max-width: 500px){
   .home .text-two{
@@ -1391,10 +1229,7 @@ margin: 120px auto;
 		text-align: center;	
 
 }
-  /* .services{
-    height: 1200px;
-    
-  } */
+  
   .project-container {
     display: flex;
     justify-content: center;
