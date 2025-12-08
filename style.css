@@ -600,8 +600,10 @@ section .title span::after{
 }
 
 .card {
-    min-width: 310px;
-    height: 200px;
+    /* min-width: 310px; */
+    /* height: 200px; */
+	height: auto;
+	height: auto;
     margin: 20px;
     background-color: #f0f0f0;
     display: flex;
