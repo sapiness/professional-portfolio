@@ -916,7 +916,7 @@ padding: 0px;
 @media (max-width: 900px) {
   .about .left img{
     height: 350px;
-    width: 350px;
+   width: auto;
   }
 	.about .topic {
    text-align: center;
@@ -929,7 +929,7 @@ padding: 0px;
 .card {
    width: auto;
     height: 180px;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     /* display: flex; */
      justify-content: center;
     align-items: center;
@@ -1100,7 +1100,7 @@ margin: 120px auto;
 }
   .about .left img{
     height: 350px;
-    width: 350px;
+   width: auto;
     object-fit: cover;
     border-radius: 10px;
   }
