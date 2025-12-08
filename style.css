@@ -1090,7 +1090,12 @@ margin: 120px auto;
     object-fit: cover;
     border-radius: 10px;
   }
-
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	flex-direction: column;
+}
   .services{
     height: auto;
     
