@@ -277,6 +277,7 @@ section .content{
   padding-bottom: 60px;
  margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
+	
 }
 .about .about-details{
   display: flex;
@@ -336,6 +337,10 @@ section  .topic{
 .about  .topic{
   color: #fff;
  
+}
+
+.about .content{
+    padding-top: 40px;
 }
 
 section  .topic a{
@@ -464,13 +469,16 @@ color: #FFF;
 /*My services CSS */
 .services{
   height: 700px;
-  
-  
+ 
 }
 
 #servicetitle{
   color: #071629;
   margin-bottom: 25px;
+}
+
+.services .content{
+    padding-top: 40px;
 }
 
 .project-container {
