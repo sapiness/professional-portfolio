@@ -852,11 +852,13 @@ footer .text span a:hover{
 .project-container{
 padding: 0px;
 }
-
+.services{
+    height: auto;  
+  }
 
   .card {
     height: 300px;
-    width: 520px;
+    width: auto;
     padding: 10px;
     margin-right:10px;
   }
@@ -895,13 +897,12 @@ padding: 0px;
     width: 90%;
     margin: 40px 0;
   }
-  .services .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
-  }
+  
 }
-
-.card p{
+.services{
+    height: auto;  
+  }
+.card {
   width: auto;
   margin-bottom: 30px;
   
@@ -911,7 +912,6 @@ padding: 0px;
   
   padding-bottom: 30px;
 }
-
 
 
 @media (max-width: 900px) {
@@ -971,7 +971,10 @@ padding: 0px;
     font-size: 28px;
   }
  
-  
+  .services{
+    height: auto;  
+  }
+	
   nav .navbar{
     width: 70%;
   }
@@ -1058,10 +1061,7 @@ padding: 0px;
     width: 100%;
     text-align: center;
   }
-  .services .boxes .box{
-    margin: 20px 0;
-    width: 100%;
-  }
+
   .contact .text{
     width: 100%;
 }
@@ -1107,7 +1107,7 @@ margin: 120px auto;
   }
 
   .services{
-    height: 1100px;
+    height: auto;
     
   }
   .project-container {
@@ -1137,10 +1137,6 @@ margin: 120px auto;
           width: auto;
          margin: auto;
         }
-.services{
-    height: auto;  
-  }
-
 
 .slider {
      display: flow; 
