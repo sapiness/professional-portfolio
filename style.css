@@ -397,7 +397,7 @@ section .button button:hover{
 .about .button button{
   background: #fff;
  color: #C271FF;
-	margin-left: 15%;
+	/* margin-left: 15%; */
 }
 
 .about .button button:hover{
