@@ -161,8 +161,9 @@ function openOverlay2(projectName, srcArray, isVideo = false) {
     });
 }const msnry = new Masonry(grid,{
     itemSelector: '.grid-item',
-    columnWidth: 1200,
-    gutter: 20
+    columnWidth: '.grid-item',
+    gutter: 20,
+  percentPosition: true
 })
 function closeOverlay() {
     const overlayContainer = document.getElementById('overlay-container');
