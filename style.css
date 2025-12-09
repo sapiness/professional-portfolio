@@ -741,15 +741,15 @@ background-repeat: no-repeat;
 }
 /* masonry grid */
 .masonry-grid {
-    width: 100%;
+    width: 90%;
     margin: 40px auto;
-	height: 1200px,
+	/* height: 1200px, */
 }
 
 .grid-item {
-    width: 1200px;
-    margin-bottom: 15px;
-    height: 1100px;
+    width: 48%;
+    margin-bottom: 20px;
+    /* height: 1100px; */
 	
 }
 
