@@ -82,31 +82,31 @@ tabBtns.forEach((btn) => {
     });
 });
 
-// function openOverlay(projectName, src) {
-//     const overlayContainer = document.getElementById('overlay-container');
-//     if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
+function openOverlay(projectName, src) {
+    const overlayContainer = document.getElementById('overlay-container');
+    if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
 
-//     const overlayContent = document.createElement('div');
-//     const body = document.body;
-//     overlayContent.classList.add('overlay-content');
+    const overlayContent = document.createElement('div');
+    const body = document.body;
+    overlayContent.classList.add('overlay-content');
 
-//     // Disable scrolling on the body element
-//     body.style.overflowY = 'hidden';
+    // Disable scrolling on the body element
+    body.style.overflowY = 'hidden';
 
-//     // Add project-specific content here
-//     const projectContent = `
-//         <div class="overlay-header">
-//             <h2>${projectName}</h2>
-//             <button class="close-btn" onclick="closeOverlay()">×</button>
-//         </div>
-//         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="${src}" allowfullscreen></iframe>
-//     `;
-//     overlayContent.innerHTML = projectContent;
-//     overlayContainer.appendChild(overlayContent);
-//     overlayContainer.style.display = 'flex';
-// }
+    // Add project-specific content here
+    const projectContent = `
+        <div class="overlay-header">
+            <h2>${projectName}</h2>
+            <button class="close-btn" onclick="closeOverlay()">×</button>
+        </div>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="${src}" allowfullscreen></iframe>
+    `;
+    overlayContent.innerHTML = projectContent;
+    overlayContainer.appendChild(overlayContent);
+    overlayContainer.style.display = 'flex';
+}
 
-function openOverlay(projectName, srcArray, isVideo = false) {
+function openOverlay2(projectName, srcArray, isVideo = false) {
     const overlayContainer = document.getElementById('overlay-container');
     if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
 
