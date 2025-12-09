@@ -270,7 +270,7 @@ section{
 }
 .about{
   /* background: #C271FF; */
- linear-gradient(156deg,rgba(194, 113, 255, 1) 22%, rgba(206, 135, 214, 1) 84%);
+ background: linear-gradient(156deg,rgba(194, 113, 255, 1) 22%, rgba(206, 135, 214, 1) 84%);
   
 }
 
