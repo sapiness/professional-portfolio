@@ -818,7 +818,8 @@ button  a:hover{
 
 /* Footer CSS */
 footer{
-  background: #C271FF;
+  /* background: #C271FF; */
+	 background: linear-gradient(156deg,rgba(194, 113, 255, 1) 22%, rgba(206, 135, 214, 1) 84%);
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
