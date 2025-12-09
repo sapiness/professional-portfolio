@@ -743,12 +743,14 @@ background-repeat: no-repeat;
 .masonry-grid {
     width: 100%;
     margin: 40px auto;
+	height: 1200px,
 }
 
 .grid-item {
     width: 1200px;
     margin-bottom: 15px;
     height: 1100px;
+	
 }
 
 .grid-item video, .grid-item iframe {
@@ -1165,6 +1167,11 @@ margin: 120px auto;
 
 } 
 
+	.grid-item {
+    width: 500px;
+    margin-bottom: 15px;
+    height: 500px;
+}
         .card .button {
           width: auto;
          margin: auto;
@@ -1331,6 +1338,10 @@ margin: 120px auto;
      width: auto;
      /* justify-content: center; */
 } 
-
+.grid-item {
+    width: 500px;
+    margin-bottom: 15px;
+    height: 500px;
+}
 } 
 
