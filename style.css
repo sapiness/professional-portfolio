@@ -629,6 +629,7 @@ section .title span::after{
   background-size: cover;
  background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode:color;
+	background-repeat: no-repeat;
   
 }
 
@@ -637,6 +638,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 #tab1 #card3 {
@@ -644,6 +646,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode:color;
+	background-repeat: no-repeat;
 }
 
 /* Tab2  */
@@ -652,6 +655,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode:color;
+background-repeat: no-repeat;
 }
 
 #tab2 #card2 {
@@ -659,6 +663,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 #tab2 #card3 {
@@ -666,6 +671,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 /* Tab3  */
@@ -674,6 +680,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 #tab3 #card2 {
@@ -688,6 +695,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 #tab3 #card4 {
@@ -695,6 +703,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 #tab3 #card5 {
@@ -702,6 +711,7 @@ section .title span::after{
   background-size: cover;
   background-color: rgba(240, 240, 240, 0.303);
   background-blend-mode: color;
+	background-repeat: no-repeat;
 }
 
 
