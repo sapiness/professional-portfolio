@@ -747,9 +747,9 @@ background-repeat: no-repeat;
 }
 
 .grid-item {
-    width: 48%;
-    margin-bottom: 20px;
-    /* height: 1100px; */
+    width: 100%;
+    margin-bottom: 30px;
+    /* height: 1200px; */
 	
 }
 
