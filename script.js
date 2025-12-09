@@ -130,7 +130,7 @@ function openOverlay2(projectName, srcArray, isVideo = false) {
         if (isVideo) {
             projectContent += `
                 <div class="grid-item">
-                    <video width="100%" height="100%" autoplay muted loop>
+                    <video width="80%" height="80%" autoplay muted loop>
                         <source src="${src}" type="video/mp4">
                     </video>
                 </div>
@@ -138,7 +138,7 @@ function openOverlay2(projectName, srcArray, isVideo = false) {
         } else {
             projectContent += `
                 <div class="grid-item">
-                    <iframe width="100%" height="100%" src="${src}" allowfullscreen></iframe>
+                    <iframe width="80%" height="80%" src="${src}" allowfullscreen></iframe>
                 </div>
             `;
         }
