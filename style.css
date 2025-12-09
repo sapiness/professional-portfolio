@@ -269,7 +269,8 @@ section{
  
 }
 .about{
-  background: #C271FF;
+  /* background: #C271FF; */
+background: linear-gradient(156deg, rgba(194, 113, 255, 1) 22%, rgba(231, 165, 240, 1) 84%);
   
 }
 
