@@ -751,6 +751,7 @@ background-repeat: no-repeat;
     margin-bottom: 30px;
     height: 1200px;
 	
+	
 }
 
 .grid-item video, .grid-item iframe {
@@ -759,7 +760,7 @@ background-repeat: no-repeat;
 	/* width: auto;
     max-height:auto;
 	margin:auto; */
-    object-fit: contain;
+    object-fit: cover;
 }
 /* Contact Me CSS */
 .contact{
