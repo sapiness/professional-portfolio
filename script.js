@@ -82,94 +82,49 @@ tabBtns.forEach((btn) => {
     });
 });
 
-function openOverlay(projectName, src) {
-    const overlayContainer = document.getElementById('overlay-container');
-    if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
 
-    const overlayContent = document.createElement('div');
-    const body = document.body;
-    overlayContent.classList.add('overlay-content');
 
-    // Disable scrolling on the body element
-    body.style.overflowY = 'hidden';
 
-    // Add project-specific content here
-    const projectContent = `
-        <div class="overlay-header">
-            <h2>${projectName}</h2>
-            <button class="close-btn" onclick="closeOverlay()">×</button>
-        </div>
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="${src}" allowfullscreen></iframe>
-    `;
-    overlayContent.innerHTML = projectContent;
-    overlayContainer.appendChild(overlayContent);
-    overlayContainer.style.display = 'flex';
+function openOverlay(title, url) {
+  const overlay = document.getElementById('overlay-container');
+  const overlayContent = document.getElementById('overlay-content');
+document.body.classList.add('overlay-open');
+
+
+  overlay.style.display = 'block';
+  overlayContent.innerHTML = `
+      <button class="close" onclick="closeOverlay()">&times</button>
+  <h2>${title}</h2>
+    <iframe src="${url}" frameborder="0" width="100%" height="90%"></iframe>
+  `;
 }
 
-function openOverlay2(projectName, srcArray, isVideo = false) {
-    const overlayContainer = document.getElementById('overlay-container');
-    if (overlayContainer.style.display === 'flex') return; // prevent multiple overlays
-
-    const overlayContent = document.createElement('div');
-    const body = document.body;
-    overlayContent.classList.add('overlay-content');
-
-    // Disable scrolling on the body element
-    body.style.overflowY = 'hidden';
-
-    // Add project-specific content here
-    let projectContent = `
-        <div class="overlay-header">
-            <h2>${projectName}</h2>
-            <button class="close-btn" onclick="closeOverlay()">×</button>
-        </div>
-        <div class="masonry-grid">
-    `;
-
-    srcArray.forEach((src) => {
-        if (isVideo) {
-            projectContent += `
-                <div class="grid-item">
-                    <video width="80%" height="80%" autoplay muted loop>
-                        <source src="${src}" type="video/mp4">
-                    </video>
-                </div>
-            `;
-        } else {
-            projectContent += `
-                <div class="grid-item">
-                    <iframe width="80%" height="80%" src="${src}" allowfullscreen></iframe>
-                </div>
-            `;
-        }
-    });
-
-    projectContent += `
-        </div>
-    `;
-
-    overlayContent.innerHTML = projectContent;
-    overlayContainer.appendChild(overlayContent);
-    overlayContainer.style.display = 'flex';
-
-    // Initialize masonry grid
-    const grid = document.querySelector('.masonry-grid');
-    const msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: 1200,
-        gutter: 10
-    });
-}const msnry = new Masonry(grid,{
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    gutter: 20,
-  percentPosition: true
-})
 function closeOverlay() {
-    const overlayContainer = document.getElementById('overlay-container');
-    overlayContainer.style.display = 'none';
-    const body = document.body;
-    // Enable scrolling on the body element
-    body.style.overflowY = 'auto';
-    overlayContainer.innerHTML = '';
+  const overlay = document.getElementById('overlay-container');
+  const video = document.getElementById('overlay-video');
+
+  if (video) {
+    video.pause();
+  }
+
+   overlay.style.display = 'none';
+   document.body.classList.remove('overlay-open');
 }
+
+
+// animations
+
+document.addEventListener('DOMContentLoaded', () => {
+  const logoText = document.querySelectorAll('.logo a span');
+  logoText.forEach((letter, index) => {
+    letter.style.transitionDelay = `${index * 0.1}s`;
+    letter.classList.add('pan');
+    setTimeout(() => {
+      letter.classList.remove('pan');
+    }, 500 + (index * 100)); // adjust the time as needed
+  });
+});
+
+
+
+
