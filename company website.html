@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <style>
+  /* Styles the button into a clean, floating 'X' */ 
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f1f1f1;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C271FF;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+    z-index: 9999; /* Keeps it on top of all other elements */
+  }  
+  
+  body {
+     background-color: #f2e6fc;
+} 
+  </style>
+  
+  </head>
+ 
+
+
+<body style="margin: 15px; margin-top: 40px; background-color: #f1f1f1; font-family: sans-serif;">
+  <button onclick="goBack()" class="close-btn" aria-label="Close page" style="cursor: pointer;">
+    &times;
+  </button>
+
+
+  
+  <!-- Container for the two-column layout -->
+  <!-- <div style="display: flex; gap: 25px; margin-top: 15px; flex-wrap: wrap;"> -->
+    
+    <!-- Left Side: Heading and Paragraph -->
+    <!-- <div style="flex: 1; min-width: 300px;"> -->
+      <h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">LVGSA Website Project</h1>
+      <p style="color: #071629; line-height: 1.6;">
+        This project showcases the digital interface design for Legacy Ventures Group SA (LVGSA), a proud 100% black-owned, BBBEE Level 1 leader in South Africa's plastic manufacturing and injection moulding industry. The platform profiles their specialized services, product ranges (PET, HDPE, PP), and their internationally patented, water-saving Leakless Valve technology. Explore the high-fidelity UI design framework below.
+      </p>
+    </div>
+
+    <!-- Right Side: Figma Embed and Commented Link -->
+    <div style="flex: 1.5; min-width: 320px; display: flex; flex-direction: column; gap: 15px;">
+      
+      <!-- Figma Iframe stretched to 100% of its column -->
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: 500px; border-radius: 4px;" src="https://lvgsawebsite.netlify.app/" allowfullscreen></iframe>
+      
+     
+      
+    <!-- </div> -->
+
+  <!-- </div> -->
+      
+  <script src="script.js"></script>
+</body>
+
+
+</html>

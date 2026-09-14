@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+ 
+
+  body {
+     background-color: #f2e6fc;
+} 
+
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+
+#reel{
+
+  width:31%;
+   height:560px;
+  
+   
+}
+
+   @media (max-width: 768px) {
+            .reel-container {
+                flex-direction: column; 
+                align-items: center;   
+                gap: 15px;              
+                /* padding: 10px; */
+            }
+
+            #reel{
+
+  width:71%;
+   height:560px;
+  
+   
+}
+        }
+</style>
+  </head>
+  <body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;">
+ <button onclick="goBack()" class="close-btn" aria-label="Close page">
+  &times;
+</button>
+<h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">Softmeet Reels</h1>
+<h2 style="font-size: 20px;padding: 10px; color:#C271FF">Case Study: Driving Viral App Installs via Short-Form Reels</h2>
+<p style="padding: 10px;">Company: Softmeet</p>
+<p style="padding: 10px;">Goal: Drive 100 weekly app downloads, reduce Customer Acquisition Cost (CAC), and boost click-through rates (CTR) on social media.</p>
+<p style="padding: 10px;">Strategy: Deploy a high-volume Reels campaign using relatable human hooks, interactive app screen captures, and frictionless transition loops.</p>
+   
+    <div class="reel-container">
+<video  id="reel" controls>
+  <source src="reel1.mp4" type="video/mp4" muted>
+</video><br>
+
+<video id="reel" controls>
+  <source src="reel2.mp4" type="video/mp4" muted>
+</video><br>
+
+
+<video id="reel" controls>
+  <source src="reel3.mp4" type="video/mp4" muted>
+</video><br>
+</div>
+     <script src="script.js"></script>
+  </body>
+</html>
+
+

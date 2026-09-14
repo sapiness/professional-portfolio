@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+
+
+  body {
+     background-color: #f2e6fc;
+} 
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+
+   /* 1. Desktop Layout (Default: Horizontal Row) */
+        .image-container {
+            display: flex;
+            flex-direction: row;    
+            flex-wrap: wrap;         
+            justify-content: center; 
+            gap: 20px;              
+            width: 100%;
+            max-width: 1200px;       
+            margin: 0 auto;         
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Image styling for Desktop */
+        .responsive-poster {
+  
+            width: 35%; 
+            min-width: 220px;        
+            height: auto;            
+            object-fit: cover;       
+            border-radius: 6px;      
+        }
+
+        /* 2. Mobile Layout (Screen widths below 768px) */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column; 
+                align-items: center;    
+                gap: 15px;              
+                padding: 10px;
+            }
+
+            .responsive-poster {
+                width: 100%;           
+                max-width: 450px;       
+            }
+        }
+
+</style>
+
+  </head>
+  <body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;"> 
+    <button onclick="goBack()" class="close-btn" aria-label="Close page">&times;</button> 
+    <h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">LVGSA Catalogue</h1>
+   <h2 style="font-size: 20px;padding: 10px; color:#C271FF">Case Study: Engineering a High-Conversion Product Catalogue for Industrial Plastic Manufacturing</h2>
+<p style="padding: 10px;">Company:LVGSA </p>
+<p style="padding: 10px;">Goal: Create a standardized, professional master product catalogue to unify the brand’s offerings, streamline B2B procurement, and increase average order value (AOV) from industrial buyers.</p>
+<p style="padding: 10px;">Strategy: Develop a high-clarity, dual-format (Interactive PDF + Premium Print) product showcase emphasizing technical specifications, polymer material grades, and seamless RFQ (Request for Quote) integration.</p>
+   
+   
+    <iframe src="https://online.fliphtml5.com/xyebm/Catalogue/" width="90%" height="550px" style="border:none;" allowfullscreen></iframe> 
+    
+    <script src="script.js"></script> 
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+
+
+    body {
+     background-color: #f2e6fc;
+} 
+
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+
+/* 1. Desktop Layout (Default: Horizontal Row) */
+        .video-container {
+            display: flex;
+            flex-direction: row;     /* Horizontal layout for web */
+            flex-wrap: wrap;         /* Allows videos to wrap to a new row if they run out of space */
+            justify-content: center; /* Centers the row contents */
+            gap: 20px;               /* Spacing between the videos */
+            width: 100%;
+            max-width: 1200px;       /* Prevents the container from stretching too wide */
+            margin: 0 auto;          /* Centers the container on the page */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Video styling for Desktop */
+        .overlay-video {
+           
+            /* width: calc(25% - 15px);  */
+
+            min-width: 250px;        
+            height: auto;            
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .video-container {
+                flex-direction: column; 
+                align-items: center;   
+                gap: 15px;              
+                padding: 10px;
+            }
+
+            .overlay-video {
+                width: 100%;            
+                max-width: 480px;      
+            }
+        }
+</style>
+
+  </head>
+  <body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;">
+  <button onclick="goBack()" class="close-btn" aria-label="Close page">
+  &times;
+</button>
+<h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">Softmeet Videos</h1>
+<h2 style="font-size: 20px;padding: 10px; color:#C271FF">Case Study: Transforming Social Media Engagement Through Strategic Video Marketing</h2>
+<p style="padding: 10px;">Company: Softmeet</p>
+<p style="padding: 10px;">Goal: Increase brand awareness, drive traffic to a new Softmeet App, and double social media engagement.</p>
+<p style="padding: 10px;">Strategy: Transition from text-heavy static posts to a diversified, high-impact social media video marketing funnel.</p>
+   
+<div class="video-container">
+        <video class="overlay-video" controls muted>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+
+        <video class="overlay-video" controls muted>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+
+        <video class="overlay-video" controls muted>
+            <source src="video4.mp4" type="video/mp4">
+        </video>
+
+        <video class="overlay-video" controls muted>
+            <source src="vid5.mp4" type="video/mp4">
+        </video>
+
+        <video class="overlay-video" controls muted>
+            <source src="video11.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+     <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+

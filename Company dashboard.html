@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <style>
+  /* Styles the button into a clean, floating 'X' */
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f1f1f1;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C271FF;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+    z-index: 9999; /* Keeps it on top of all other elements */
+  }
+
+  .app-video {
+    width: 95%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    
+}
+ body {
+     background-color: #f2e6fc;
+} 
+ 
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+
+  @media (max-width: 500px){
+    .app-video {
+      width: 95%;
+      height: 300px;
+    }
+  }
+</style>
+  </head>
+  <body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;">
+  <button onclick="goBack()" class="close-btn" aria-label="Close page" style="cursor: pointer;">
+    &times;
+  </button>
+
+  <!-- Container for the two-column layout -->
+  <div style="display: flex; gap: 25px; margin-top: 15px; flex-wrap: wrap;">
+    
+    <!-- Left Side: Heading and Paragraph -->
+    <div style="flex: 1; min-width: 300px;">
+      <h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">Softmeet Company Dashboard</h1>
+      <div style="color: #071629; line-height: 1.4;">
+       <p>The interactive company dashboard provides a comprehensive overview of the organization's performance and key metrics.</p>
+   
+    <h1 style="font-size: 20px;padding-bottom: 10px;">KEY ELEMENTS FOR THE DASHBOARD</h1>
+
+<h2 style="font-size: 20px;padding-bottom: 10px;">1. Overview Summary</h2>
+
+    <p><strong>1.1 Total Responses:</strong> Total number of survey responses.</p>
+    <p><strong>1.2 Response Rate:</strong> Percentage of responses relative to the total number of people surveyed.</p>
+    <p><strong>1.3 Survey Duration:</strong> Time period over which the survey was conducted.</p>
+
+<h2 style="font-size: 20px;padding: 10px;">2. Demographics</h2>
+<ul style="padding: 10px;">
+    <li>Age</li>
+    <li>Gender</li>
+    <li>Province</li>
+    <li>Language</li>
+</ul>
+
+<h2 style="font-size: 20px;padding: 10px;">3. Employment and Financial Status Section</h2>
+<ul style="padding: 10px;">
+    <li>Age</li>
+    <li>Employment Status</li>
+    <li><strong>Cell Phone Network Used:</strong> Distribution of cell phone network providers used.</li>
+    <li>Data Purchasing Patterns (Amount and Purchasing Frequency)</li>
+    <li>Wifi usage (Purchasing Frequency)</li>
+    <li>Airtime Top-Up Patterns (Amount and Purchasing Frequency)</li>
+</ul>
+
+<h2 style="font-size: 20px;padding: 10px;">4. Data and Connectivity Section</h2>
+<h4>4.1 Mobile Data Availability:</h4>
+<ul style="padding: 10px;">
+    <li>Frequency of Not Having Mobile Data</li>
+    <li>Time Taken to Purchase More Data After Running Out</li>
+</ul>
+<h4>4.2 Activities Missed Without Data</h4>
+
+<h2 style="font-size: 20px;padding: 10px;">5. App Usage and Preferences Section</h2>
+<ul style="padding: 10px;">
+    <li>Frequency of App Installation</li>
+    <li>Important Factors When Installing Apps</li>
+    <li>Installed Apps</li>
+</ul>
+   
+      </div>        
+    </div>
+
+    <!-- Right Side: Video Player and Link -->
+    <div style="flex: 1.2; min-width: 300px; display: flex; flex-direction: column; gap: 15px;">
+      
+      <!-- Video Container with responsive settings -->
+      <div class="video-container1" style="width: 100%;">
+        <video class="app-video" id="overlay-video" controls muted style="height: auto; display: block; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 4px; background-color: #000;">
+          <source src="company-dashboard.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Out-of-video external link -->
+      <a href="https://embed.figma.com/design/57H44J576wwBf3Oo2Ky6jp/dashboard?node-id=0-1&embed-host=share" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+        <span id="project" style="padding: 10px 0; color: #C271FF; font-weight: bold; display: inline-block;">Click here to view project.</span>
+      </a>
+      
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

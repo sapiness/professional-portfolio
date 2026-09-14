@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+
+
+   body {
+     background-color: #f2e6fc;
+} 
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+
+   /* 1. Desktop Layout (Default: Horizontal Row) */
+        .image-container {
+            display: flex;
+            flex-direction: row;    
+            flex-wrap: wrap;         
+            justify-content: center; 
+            gap: 20px;              
+            width: 100%;
+            max-width: 1200px;       
+            margin: 0 auto;         
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Image styling for Desktop */
+        .responsive-poster {
+  
+            width: 35%; 
+            min-width: 220px;        
+            height: auto;            
+            object-fit: cover;       
+            border-radius: 6px;      
+        }
+
+        /* 2. Mobile Layout (Screen widths below 768px) */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column; 
+                align-items: center;    
+                gap: 15px;              
+                padding: 10px;
+            }
+
+            .responsive-poster {
+                width: 100%;           
+                max-width: 450px;       
+            }
+        }
+
+</style>
+
+  </head>
+  <body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;">
+    <button onclick="goBack()" class="close-btn" aria-label="Close page">
+  &times;
+</button>
+<h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">LVGSA Brochure</h1>
+<h2 style="font-size: 20px;padding: 10px; color:#C271FF">Case Study: Driving B2B Sales Conversions Through a Technical Product Brochure</h2>
+<p style="padding: 10px;">Company: LVGSA</p>
+<p style="padding: 10px;">Goal: Drive 100 weekly app downloads, reduce Customer Acquisition Cost (CAC), and boost click-through rates (CTR) on social media.</p>
+<p style="padding: 10px;">Strategy: Deploy highly visual, benefit-driven social media posters optimized for mobile feeds with clear, direct call-to-actions (CTAs)</p>
+   
+<embed 
+  src="brochure.pdf" 
+  type="application/pdf" 
+  width="100%" 
+  height="600px" />
+
+     <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+

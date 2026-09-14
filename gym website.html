@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <style>
+  /* Styles the button into a clean, floating 'X' */
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f1f1f1;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C271FF;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+    z-index: 9999; /* Keeps it on top of all other elements */
+  }
+
+ body {
+     background-color: #f2e6fc;
+} 
+
+video{
+height: 500px;
+}
+
+  /* Hover effect for better user experience */
+  .close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+  }
+</style>
+
+  </head>
+<body style="margin: 15px; background-color: #f1f1f1; font-family: sans-serif;">
+  <button onclick="goBack()" class="close-btn" aria-label="Close page" style="cursor: pointer;">
+    &times;
+  </button>
+
+  <!-- Container for the two-column layout -->
+  <div style="display: flex; gap: 25px; margin-top: 15px; flex-wrap: wrap;">
+    
+    <!-- Left Side: Heading and Paragraph -->
+    <div style="flex: 1; min-width: 300px;">
+      <h1 style="color: #C271FF; margin-top: 0; padding-bottom: 20px;">Gym Website Project</h1>
+      <p style="color: #071629; line-height: 1.6;">
+        This single-page Gym website features a fully responsive layout built with HTML, CSS, and JavaScript. It showcases custom navigation, informative service overviews, and an interactive, scrollable membership plan section engineered to provide a seamless user onboarding experience. Watch the video demo or explore the design assets on the right.<br><br>
+        Users can navigate through the site effortlessly, with smooth scrolling and visually appealing elements that enhance engagement. The membership plan section is particularly noteworthy, allowing users to scroll through different options with ease, making it simple to compare and select the best plan for their fitness journey.
+      </p>
+    </div>
+
+    <!-- Right Side: LinkedIn Embed and Link -->
+    <div style="flex: 1.2; min-width: 320px; display: flex; flex-direction: column; gap: 15px;">
+      
+      <!-- Video Container with Iframe stretched to 100% of its column -->
+      <div class="video-container1" style="width: 100%;"> 
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7266178120800489474?compact=1" height="500" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 4px;"></iframe>
+      </div>
+
+      <!-- Out-of-iframe external link -->
+      <a href="https://embed.figma.com/design/ATZxn9RfASRXF2CML2Ao4g/Untitled?node-id=1-2&embed-host=share" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+        <span id="project" style="padding: 10px 0; color: #C271FF; font-weight: bold; display: inline-block;">Click here to view project.</span>
+      </a>
+      
+    </div>
+
+  </div>
+      
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
